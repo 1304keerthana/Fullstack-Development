@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduSphere | Modern Course Management</title>
+    <meta name="description" content="A modern course management system for students and administrators." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="brand-badge">E</span>
+          <span>EduSphere</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a class="active" href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+          <a class="ghost-btn" href="auth.html">Sign In</a>
+          <button class="nav-toggle btn" id="navToggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="badge">✨ New learning journeys every week</span>
+            <h1>Learn faster with a beautifully organized course experience.</h1>
+            <p>EduSphere helps students discover, enroll, and track their growth with a polished dashboard, rich course content, and flexible progress tools.</p>
+            <div class="hero-actions">
+              <a class="btn" href="courses.html">Explore Courses</a>
+              <a class="ghost-btn" href="dashboard.html">View Dashboard</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="metric"><strong>250+</strong><span>Live Courses</span></div>
+              <div class="metric"><strong>98%</strong><span>Completion Rate</span></div>
+              <div class="metric"><strong>24/7</strong><span>Mentor Support</span></div>
+            </div>
+          </div>
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Students collaborating on a project" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Featured Courses</h2>
+              <p>Handpicked learning paths built for modern careers.</p>
+            </div>
+            <a class="ghost-btn" href="courses.html">See All</a>
+          </div>
+          <div class="card-grid" id="featuredCourses"></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-title">
+            <div>
+              <h2>Why learners love EduSphere</h2>
+              <p>Clean design, structure, and support from day one.</p>
+            </div>
+          </div>
+          <div class="card-grid">
+            <article class="panel">
+              <div class="card-body">
+                <h3>Structured learning</h3>
+                <p>Organized syllabus, outcomes, and study materials make every topic easy to follow.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="card-body">
+                <h3>Real progress tracking</h3>
+                <p>Visual dashboards reveal lesson completion, assignment deadlines, and performance milestones.</p>
+              </div>
+            </article>
+            <article class="panel">
+              <div class="card-body">
+                <h3>Seamless enrollment</h3>
+                <p>Join courses in seconds and receive instant feedback through notifications and reminders.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div>
+          <strong>EduSphere</strong>
+          <p>Modern training, clear outcomes, and a calm learning experience.</p>
+        </div>
+        <div>hello@edusphere.io · +1 (555) 123-4567</div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
