@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile | EduSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="brand-badge">E</span>
+          <span>EduSphere</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+          <a class="ghost-btn" href="auth.html">Sign Out</a>
+          <button class="nav-toggle btn" id="navToggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="profile-card">
+          <div class="profile-head">
+            <div style="display:flex;align-items:center;gap:0.9rem;">
+              <div class="avatar">AR</div>
+              <div>
+                <h2 style="margin:0;">Alex Rivera</h2>
+                <p style="margin:0.25rem 0 0;color:var(--muted);">Student · Product Design Track</p>
+              </div>
+            </div>
+            <button class="btn">Edit Profile</button>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email</label>
+              <input value="alex@edusphere.io" />
+            </div>
+            <div class="form-group">
+              <label>Location</label>
+              <input value="New York, USA" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Bio</label>
+            <textarea rows="4">I enjoy building intuitive learning experiences and mastering practical design workflows.</textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

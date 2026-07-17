@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | EduSphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container">
+        <a href="index.html" class="brand">
+          <span class="brand-badge">E</span>
+          <span>EduSphere</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a class="active" href="dashboard.html">Dashboard</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+          <a class="ghost-btn" href="profile.html">Profile</a>
+          <button class="nav-toggle btn" id="navToggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Student dashboard</h2>
+            <p>Stay on top of your learning goals and deadlines.</p>
+          </div>
+          <a class="btn" href="certificate.html">View Certificate</a>
+        </div>
+
+        <div class="stat-grid">
+          <article class="stat-card">
+            <h3 id="enrolledCount">0</h3>
+            <p>Enrolled Courses</p>
+          </article>
+          <article class="stat-card">
+            <h3 id="completedLessons">0</h3>
+            <p>Completed Lessons</p>
+          </article>
+          <article class="stat-card">
+            <h3 id="upcomingCount">0</h3>
+            <p>Upcoming Assignments</p>
+          </article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section>
+            <div class="section-title">
+              <h2>My Courses</h2>
+            </div>
+            <div class="list" id="enrolledCourses"></div>
+          </section>
+          <aside class="detail-side">
+            <article class="panel sidebar-card">
+              <h3>Upcoming Assignments</h3>
+              <div class="list" id="assignmentsList"></div>
+            </article>
+            <article class="panel sidebar-card">
+              <h3>Announcements</h3>
+              <div class="list" id="announcementsList"></div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
